@@ -19,6 +19,7 @@ songs = [
   url: '04 - †hholyghs†.mp3', duration: 266
   'resized/EP-†-Artwork-(Front-Cover).jpg'
   url: '05 - †.mp3', duration: 173
+  'EX†ENDED PLAY.mp4'
 ]
 
 baseUrl = 'https://dl.dropbox.com/u/2956535/websites/crossesplayer/'
