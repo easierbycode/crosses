@@ -28,19 +28,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="flowplayer-playlist.coffee" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="flowplayer-playlist.coffee" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/flowplayer-playlist.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="32" selection-start="1732" selection-end="1732" vertical-scroll-proportion="0.5634638">
+            <state line="14" column="30" selection-start="557" selection-end="557" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.css.scss" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="application.css.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="113" column="9" selection-start="2195" selection-end="2195" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -65,8 +65,8 @@
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
         <option value="$PROJECT_DIR$/app/views/home/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/flowplayer-playlist.coffee" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" />
       </list>
     </option>
   </component>
@@ -636,16 +636,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css.scss">
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/flowplayer-playlist.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="113" column="9" selection-start="2195" selection-end="2195" vertical-scroll-proportion="0.0">
+        <state line="14" column="30" selection-start="557" selection-end="557" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/flowplayer-playlist.coffee">
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="32" selection-start="1732" selection-end="1732" vertical-scroll-proportion="0.5634638">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
