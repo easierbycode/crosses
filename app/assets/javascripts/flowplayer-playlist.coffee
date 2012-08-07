@@ -23,20 +23,52 @@ songs = [
 
 baseUrl = 'https://dl.dropbox.com/u/2956535/websites/crossesplayer/'
 
+template = _.template("<a href='<%= url %>'><%- title %></a>")
+
+els = []
+
+playlist = songs.map (song) ->
+  if typeof song == "string"
+    "#{baseUrl}#{encodeURI(song)}"
+  else
+    title = song.url
+    url = "#{baseUrl}#{encodeURI(song.url)}"
+
+    view = template
+      title: title
+      url: song.url
+    els.push view
+
+    url: url, duration: song.duration
+
+for n in [4..els.length] by 4
+  els.splice n, 0, '</div><div class="page">'
+
+els.splice 0, 0, '<div class="page">'
+els.splice els.length, 0, '</div>'
+
 $ ->
-  $f "player", "http://releases.flowplayer.org/swf/flowplayer-3.2.12.swf",
+  if navigator.userAgent.match(/Android/i) or navigator.userAgent.match(/webOS/i) or navigator.userAgent.match(/iPhone/i) or navigator.userAgent.match(/iPad/i) or navigator.userAgent.match(/iPod/i) or navigator.userAgent.match(/BlackBerry/i)
+    $('.playlist_wrap').show()
 
-    playlist: songs.map (song) ->
-      if typeof song == "string"
-        "#{baseUrl}#{encodeURI(song)}"
-      else
-        url: "#{baseUrl}#{encodeURI(song.url)}", duration: song.duration
+    $('.entries').html els.join ''
 
-    # show playlist buttons in controlbar
-    plugins:
-      controls:
-        playlist: true
+    $f("player", "http://releases.flowplayer.org/swf/flowplayer-3.2.12.swf",
+      clip: {baseUrl: baseUrl}
+    ).ipad().playlist("div.entries")
 
-        # use tube skin with a different background color
-        url: "http://releases.flowplayer.org/swf/flowplayer.controls-tube-3.2.12.swf"
-        backgroundColor: "#2c2c2c"
+    $('#pl').scrollable circular: true
+
+  else
+    $f "player", "http://releases.flowplayer.org/swf/flowplayer-3.2.12.swf",
+
+      playlist: playlist
+
+      # show playlist buttons in controlbar
+      plugins:
+        controls:
+          playlist: true
+
+          # use tube skin with a different background color
+          url: "http://releases.flowplayer.org/swf/flowplayer.controls-tube-3.2.12.swf"
+          backgroundColor: "#2c2c2c"

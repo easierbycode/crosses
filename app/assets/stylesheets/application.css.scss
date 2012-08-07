@@ -1,0 +1,135 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+body {
+    background-color: #252525;
+}
+
+#player {
+    margin:0 0 20px 80px;
+}
+/* container has a background image */
+
+a.player {
+    display:block;
+    width:500px;
+    height:340px;
+    text-align:center;
+    color:#fff;
+    text-decoration:none;
+    cursor:pointer;
+    background-color:#000;
+    background:-moz-linear-gradient(top,
+    rgba(55, 102, 152, 0.9),
+    rgba(6, 6, 6, 0.9));
+    -moz-box-shadow:0 0 40px rgba(100, 118, 173, 0.5);
+}
+
+a.player:hover {
+    background:-moz-linear-gradient(center top,
+    rgba(73, 122, 173, 0.898),
+    rgba(6, 6, 6, 0.898));
+}
+
+/* splash image */
+a.player img {
+    margin-top:125px;
+    border:0;
+}
+
+#pl {
+    height:80px;
+    background:#f5fbfb image-url('h150.png') repeat-x;
+    border:1px solid #ddd;
+    width:586px;
+    position:relative;
+    overflow:hidden;
+    padding:5px 0;
+    float:left;
+}
+
+.entries {
+    height:80px;
+    position:absolute;
+    width:10000em;
+}
+
+.page {
+    width:586px;
+    float:left;
+}
+
+.entries a {
+    background:transparent image-url('entry.png') no-repeat scroll 0%;
+    color:#666;
+    float:left;
+    font-family:"bitstream vera sans","lucida grande","verdana";
+    font-size:11px;
+    height:60px;
+    margin:0px 4px;
+    padding:10px;
+    text-decoration:none;
+    width:117px;
+
+}
+
+.entries a:hover {
+    background-position:-140px 0;
+    color:#000;
+}
+
+.entries .playing {
+    background-position:-280px 0;
+    color:#000;
+}
+
+.entries .paused {
+    background-position:-420px 0;
+    color:#000;
+}
+
+.entries .progress {
+    opacity:0.8;
+}
+
+.entries em {
+    float:right;
+    margin-top:15px;
+    color:red;
+    font-style:normal;
+}
+
+.playlist_wrap{
+    display: none;
+    margin: 0 auto;
+    width: 668px;
+}
+
+.playlist_wrap .next, .playlist_wrap .prev {
+    display:block;
+    width:18px;
+    height:18px;
+    background: image-url('left.png') no-repeat;
+    margin:30px 10px;
+    cursor:pointer;
+    float:left;
+}
+
+.playlist_wrap .next:hover, .playlist_wrap  .prev:hover {
+    background-position:0px -18px;
+}
+
+.playlist_wrap  .next {
+    background-image: image-url('right.png');
+}

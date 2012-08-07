@@ -12,5 +12,9 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require underscore-min.js
+//= require jquery.tools.min.js
 //= require flowplayer-3.2.11.min.js
+//= require flowplayer.playlist-3.2.10.min.js
+//= require flowplayer.ipad-3.2.10.min.js
 //= require_tree .
