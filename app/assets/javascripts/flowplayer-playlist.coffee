@@ -49,6 +49,7 @@ els.splice 0, 0, '<div class="page">'
 els.splice els.length, 0, '</div>'
 
 $ ->
+  # TODO: fix Android not being detected correctly
   if navigator.userAgent.match(/Android/i) or navigator.userAgent.match(/webOS/i) or navigator.userAgent.match(/iPhone/i) or navigator.userAgent.match(/iPad/i) or navigator.userAgent.match(/iPod/i) or navigator.userAgent.match(/BlackBerry/i)
     $('.playlist_wrap').show()
 
