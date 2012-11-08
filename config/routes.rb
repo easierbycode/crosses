@@ -1,5 +1,6 @@
 CrossesplayerCom::Application.routes.draw do
   get "home/index"
+  get "home/deftones"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
